@@ -1,0 +1,16 @@
+<div ng-repeat="order in orders">
+    <md-list flex>
+        <md-list-item class="md-3-line" ng-repeat="item in order.items">
+            <img ng-src="/images/{{item.color}}.jpg" class="md-avatar" alt="{{item.brand}}"/>
+            <div class="md-list-item-text">
+                <h3>{{item.brand}}</h3>
+                <p>{{item.color}}</p>
+                <p>{{item.price}}</p>
+            </div>
+            <md-checkbox class="md-secondary"></md-checkbox>
+            <md-icon class="material-icons md-primary"></md-icon>
+            <md-icon class="md-secondary material-icons" aria-label="remove">remove_circle</md-icon>
+        </md-list-item>
+    </md-list>
+    {{order.getTotalPrice()}}
+</div>

@@ -1,0 +1,32 @@
+[
+  {
+    "brand": "colins",
+    "color": "white",
+    "size": "M",
+    "price": 100
+  },
+  {
+    "brand": "colins",
+    "color": "black",
+    "size": "M",
+    "price": 100
+  },
+  {
+    "brand": "abibas",
+    "color": "black",
+    "size": "M",
+    "price": 120
+  },
+  {
+    "brand": "abibas",
+    "color": "white",
+    "size": "M",
+    "price": 120
+  },
+  {
+    "brand": "abibas",
+    "color": "red",
+    "size": "M",
+    "price": 120
+  }
+]
