@@ -11,4 +11,5 @@ angular.module('myApp.cart', ['ngRoute'])
 
     .controller('CartCtrl', ['$scope', 'Magaz', function ($scope, Magaz) {
         $scope.orders = Magaz.getOrders();
+
     }]);

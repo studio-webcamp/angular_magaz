@@ -7,10 +7,11 @@
                 <p>{{item.color}}</p>
                 <p>{{item.price}}</p>
             </div>
-            <md-checkbox class="md-secondary"></md-checkbox>
-            <md-icon class="material-icons md-primary"></md-icon>
-            <md-icon class="md-secondary material-icons" aria-label="remove">remove_circle</md-icon>
+            <md-button class="md-secondary md-icon-button" aria-label="Remove" ng-click="order.removeItem(item.sku)">
+                <md-icon class="material-icons md-accent">remove_circle</md-icon>
+            </md-button>
         </md-list-item>
     </md-list>
-    {{order.getTotalPrice()}}
+    <div class="md-title">Total: {{order.getTotalPrice()}}</div>
+    <md-button ng-href="#!/checkout" class="md-raised md-primary">Next</md-button>
 </div>

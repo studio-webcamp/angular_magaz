@@ -1,0 +1,33 @@
+<div ng-repeat="order in orders">
+    <form flex="50" ng-submit="confirmOrder()">
+        <md-input-container class="md-icon-float md-block">
+            <label>Name</label>
+            <md-icon class="material-icons md-primary">person</md-icon>
+            <input ng-model="order.customer" type="text" ng-required="true">
+        </md-input-container>
+
+        <md-input-container class="md-block">
+            <label>Phone Number</label>
+            <md-icon class="material-icons md-primary">phone</md-icon>
+            <input ng-model="order.phone" type="text" ng-required="true" ui-br-phone-number>
+        </md-input-container>
+
+        <md-input-container class="md-block">
+            <label>Email</label>
+            <md-icon class="material-icons md-primary">email</md-icon>
+            <input ng-model="order.email" type="email" ng-required="true">
+        </md-input-container>
+
+        <md-input-container class="md-block">
+            <label>City</label>
+            <md-icon class="material-icons md-primary">location_city</md-icon>
+            <md-select ng-model="order.city">
+                <md-option ng-repeat="city in cities" value="{{city}}">
+                    {{city}}
+                </md-option>
+            </md-select>
+        </md-input-container>
+
+        <md-button type="submit" class="md-raised md-primary">Confirm</md-button>
+    </form>
+</div>

@@ -1,29 +1,34 @@
 [
   {
+    "sku": 101,
     "brand": "colins",
     "color": "white",
     "size": "M",
     "price": 100
   },
   {
+    "sku": 102,
     "brand": "colins",
     "color": "black",
     "size": "M",
     "price": 100
   },
   {
+    "sku": 103,
     "brand": "abibas",
     "color": "black",
     "size": "M",
     "price": 120
   },
   {
+    "sku": 104,
     "brand": "abibas",
     "color": "white",
     "size": "M",
     "price": 120
   },
   {
+    "sku": 105,
     "brand": "abibas",
     "color": "red",
     "size": "M",
